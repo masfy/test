@@ -3,6 +3,7 @@ function App() {
         const [result, setResult] = React.useState(null);
         const [error, setError] = React.useState('');
         const [loading, setLoading] = React.useState(false);
+        const [connectionStatus, setConnectionStatus] = React.useState('testing');
         const [debugMode, setDebugMode] = React.useState(false);
 
         React.useEffect(() => {
@@ -11,6 +12,16 @@ function App() {
             const urlParams = new URLSearchParams(window.location.search);
             setDebugMode(urlParams.get('debug') === 'true');
         }, []);
+
+        const checkConnection = async () => {
+            try {
+                const isConnected = await testConnection();
+                setConnectionStatus(isConnected ? 'connected' : 'error');
+            } catch (err) {
+                console.error('Connection test failed:', err);
+                setConnectionStatus('error');
+            }
+        };
 
         const handleSearch = async (nisn) => {
             setLoading(true);
@@ -45,6 +56,15 @@ function App() {
             <div className="min-h-screen flex flex-col" data-name="app" data-file="app.js">
                 <main className="flex-1">
                     <Header />
+
+                    {connectionStatus === 'connected' && (
+                        <div className="max-w-md mx-auto px-4 mb-4">
+                            <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+                                <i className="fas fa-check-circle mr-2"></i>
+                                Database terhubung. Siap untuk pencarian.
+                            </div>
+                        </div>
+                    )}
                     
                     <div className="container mx-auto py-8">
                         <SearchForm onSearch={handleSearch} loading={loading} />
