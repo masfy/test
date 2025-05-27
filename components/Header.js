@@ -6,11 +6,9 @@ function Header() {
                     <img 
                         src="https://app.trickle.so/storage/public/images/usr_10b047df68010001/7f5f0001-541f-4dab-8f6b-5b54a71b8b61.png" 
                         alt="Logo Brand" 
-                        className="mx-auto h-20 w-auto mb-4"
+                        className="mx-auto h-40 w-auto mb-4"
                     />
-                    <div className="graduation-icon">
-                        <i className="fas fa-graduation-cap text-6xl text-white"></i>
-                    </div>
+
                 </div>
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
                     Pengumuman Kelulusan
