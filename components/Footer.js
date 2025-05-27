@@ -4,8 +4,7 @@ function Footer() {
             <footer className="mt-16 bg-gray-800 text-white py-8" data-name="footer" data-file="components/Footer.js">
                 <div className="container mx-auto px-4 text-center">
                     <div className="mb-6">
-                        <h3 className="text-xl font-semibold mb-4">2025 | Mas Alfy</h3>
-                        <p className="text-gray-300 mb-4">Sinau Ngoding</p>
+                        <p className="text-gray-300 mb-4"> © 2025 | Mas Alfy Sinau Ngoding</p>
                     </div>
                     
                     <div className="flex justify-center space-x-6 mb-6">
@@ -16,7 +15,6 @@ function Footer() {
                             className="text-pink-400 hover:text-pink-300 transition-colors"
                         >
                             <i className="fab fa-instagram text-2xl"></i>
-                            <span className="ml-2">Instagram</span>
                         </a>
                         <a 
                             href="https://facebook.com/alfiannoor.arnaim/" 
@@ -25,7 +23,6 @@ function Footer() {
                             className="text-blue-400 hover:text-blue-300 transition-colors"
                         >
                             <i className="fab fa-facebook text-2xl"></i>
-                            <span className="ml-2">Facebook</span>
                         </a>
                     </div>
                     
