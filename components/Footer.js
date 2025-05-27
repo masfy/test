@@ -5,7 +5,7 @@ function Footer() {
                 <div className="container mx-auto px-4 text-center">
                     <div className="mb-6">
                         <h3 className="text-xl font-semibold mb-4">2025 | Mas Alfy</h3>
-                        <p className="text-gray-300 mb-4">Tahun pelaksanaan kelulusan 2024/2025</p>
+                        <p className="text-gray-300 mb-4">Sinau Ngoding</p>
                     </div>
                     
                     <div className="flex justify-center space-x-6 mb-6">
@@ -32,7 +32,7 @@ function Footer() {
                     <div className="border-t border-gray-700 pt-4">
                         <p className="text-gray-400 text-sm">
                             <i className="fas fa-exclamation-circle mr-2"></i>
-                            Hubungi panitia jika terdapat kesalahan data.
+                            Hubungi ulun jika terdapat kesalahan data.
                         </p>
                     </div>
                 </div>
