@@ -56,8 +56,8 @@ function App() {
             <div className="min-h-screen flex flex-col" data-name="app" data-file="app.js">
                 <main className="flex-1">
                     <Header />
-                    <hide>
-                    {connectionStatus === 'error' && (
+                    
+                    {false && connectionStatus === 'error' && (
                         <div className="max-w-md mx-auto px-4 mb-4">
                             <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded">
                                 <i className="fas fa-exclamation-triangle mr-2"></i>
@@ -66,7 +66,7 @@ function App() {
                         </div>
                     )}
                     
-                    {connectionStatus === 'connected' && (
+                    {false && connectionStatus === 'connected' && (
                         <div className="max-w-md mx-auto px-4 mb-4">
                             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
                                 <i className="fas fa-check-circle mr-2"></i>
@@ -74,7 +74,7 @@ function App() {
                             </div>
                         </div>
                     )}
-        </hide>
+
                     <div className="container mx-auto py-8">
                         <SearchForm onSearch={handleSearch} loading={loading} />
                         <ResultCard result={result} error={error} />
