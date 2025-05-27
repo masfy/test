@@ -1,4 +1,4 @@
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzf6vav0S78eHs4Auny3UpH5mNXuuGucXip78kty4ZsLlLaExB18SpLDGCMhC0Rizfcxg/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwB7GI6tlCbKrwnoVCVExU3rnhyXQRAGXaINqQcntjIYy5A4l0uTyEYeBRwuNnrM_cVvQ/exec';
 
 async function searchStudentByNISN(nisn) {
     try {
