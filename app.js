@@ -56,7 +56,7 @@ function App() {
             <div className="min-h-screen flex flex-col" data-name="app" data-file="app.js">
                 <main className="flex-1">
                     <Header />
-                    
+                    <hide>
                     {connectionStatus === 'error' && (
                         <div className="max-w-md mx-auto px-4 mb-4">
                             <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded">
@@ -74,7 +74,7 @@ function App() {
                             </div>
                         </div>
                     )}
-                    
+        </hide>
                     <div className="container mx-auto py-8">
                         <SearchForm onSearch={handleSearch} loading={loading} />
                         <ResultCard result={result} error={error} />
